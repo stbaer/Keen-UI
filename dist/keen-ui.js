@@ -998,7 +998,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return;
 	    }
 
-	    if (! _classlist2.has(holder, 'ui-ripple-ink')) {
+	    if (! _classlist2.default.has(holder, 'ui-ripple-ink')) {
 	        holder = holder.querySelector('.ui-ripple-ink');
 	    }
 
