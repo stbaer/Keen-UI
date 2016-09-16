@@ -994,11 +994,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	var startRipple = function startRipple(eventType, event) {
 	    var holder = event.currentTarget;
 
-			if (!holder) {
+		if (!holder) {
 	        return;
 	    }
 
-	    if (! classlist.has(holder, 'ui-ripple-ink')) {
+	    if (! _classlist2.has(holder, 'ui-ripple-ink')) {
 	        holder = holder.querySelector('.ui-ripple-ink');
 	    }
 
