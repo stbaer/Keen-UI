@@ -992,15 +992,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var startRipple = function startRipple(eventType, event) {
-	    var holder = event.currentTarget;
+        var holder = event.currentTarget;
 
-		if (!holder) {
-	        return;
-	    }
+        if (holder && !_classlist2.has(holder, 'ui-ripple-ink')) {
+            holder = holder.querySelector('.ui-ripple-ink');
+        }
 
-	    if (! _classlist2.default.has(holder, 'ui-ripple-ink')) {
-	        holder = holder.querySelector('.ui-ripple-ink');
-	    }
+        if (!holder) {
+            return;
+        }
 
 	    var prev = holder.getAttribute('data-ui-event');
 
